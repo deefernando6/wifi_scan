@@ -8,3 +8,5 @@ while True:
     if ip_add_range_pattern.search(ip_address_range_entered):
         print(f"{ip_address_range_entered} is valid")
         break
+		
+arp_result = scapy.arping(ip_address_range_entered)
